@@ -1,16 +1,13 @@
 <?php
 
-namespace App\Http\BookController;
+namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\View\View;
 
 class BookController extends Controller
 {
     public function index(): View
     {
-        $users = User::all();
-
         return view('index');
     }
 }
